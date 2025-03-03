@@ -24,9 +24,20 @@ public class JoinArrayList {
             }
         };
 
+        ArrayList<String> third_list = new ArrayList<>(){
+            {
+                add("January");
+                add("February");
+                add("March");
+                add("April");
+
+            }
+        };
+
         ArrayList<String> joined_list = new ArrayList<>();
         joined_list.addAll(first_list);
         joined_list.addAll(second_list);
+        joined_list.addAll(third_list);
         System.out.println("Joined Array List: "+joined_list);
 
     }
